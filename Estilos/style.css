@@ -1,0 +1,449 @@
+/* Importando uma fonte */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #000;
+}
+
+/*Navbar*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 8%;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 28px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    color: #fff;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+header ul li {
+    margin-left: 35px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: rgba(255,255,255,0.8);
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+header ul li a:hover {
+    color: #fff;
+}
+
+/* Section */
+.inic-sect {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    /* Camada escura no bckg-img */
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+  /*  linear-gradient(
+        to bottom, rgba(0, 0, 0, 0.8) 10%, transparent 80%
+        
+        ), 
+    linear-gradient(
+        to top, rgba(0, 0, 0, 0.8) 10%, transparent 90%
+        ),  */
+    url('Imagens/bg.jpg');
+     mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+    background-size: cover;
+    background-position: center;
+}
+
+/*.img-inic {
+     mask-image: linear-gradient(to bottom, black 1%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 1%, transparent 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  /*  width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;  Para ficar atrás do conteúdo 
+}*/
+
+.centro {
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+/* Título Central */
+.centro h1 {
+    font-size: 56px; /* Bem grande e impactante */
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    line-height: 1.1;
+}
+
+.centro p {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    color: rgba(255,255,255,0.9);
+}
+
+/* Botões Centro inicial*/
+.btn-centro {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.btn {
+    padding: 15px 35px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 4px;
+    transition: 0.4s ease;
+}
+
+.btn1 {
+    background-color: #fff;
+    color: #000;
+}
+
+.btn1:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-3px);
+}
+
+.btn2 {
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.btn2:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+
+
+/* --- PÁGINA SOBRE --- */
+.sobre-page {
+    background-color: #000;
+    min-height: 100vh;
+    padding-top: 80px; /* Para não ficar embaixo da navbar */
+}
+
+.sobre-hero {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('Imagens/ag1.jpg');
+    background-size: cover;
+    background-position: center;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+.sobre-hero h1 {
+    font-size: 48px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.sobre-hero p {
+    color: #888;
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+.missao-container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 80px 8%;
+    flex-wrap: wrap;
+}
+
+.missao-texto a {
+    color: #fff; /* Deixa o link branco */
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px solid #fff; /* Cria uma linha elegante embaixo */
+    transition: 0.3s;
+}
+
+.missao-texto a:hover {
+    color: #888;
+    border-bottom-color: #888;
+}
+
+.missao-texto {
+    flex: 1;
+    min-width: 300px;
+}
+
+.missao-texto h2 {
+    color: #fff;
+    font-size: 32px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.missao-texto p {
+    color: #888;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.missao-img {
+    flex: 1;
+    min-width: 300px;
+}
+
+.missao-img img {
+    width: 100%;
+    border-radius: 7px;
+    border: 1px solid #222;
+}
+
+/* Pilares M' Motors */
+.pilares {
+    background-color: rgb(34, 35, 37);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 60px 8% 100px 8%;
+}
+
+.pilar-card {
+    background: #000000;
+    padding: 40px;
+    border: 1px solid #1a1a1a;
+    transition: 0.3s;
+}
+
+.pilar-card:hover {
+    border-color: #fff;
+}
+
+.pilar-card span {
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+    display: block;
+    margin-bottom: 15px;
+    opacity: 0.5;
+}
+
+.pilar-card h3 {
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.pilar-card p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+
+
+/* Rodapé */
+footer {
+    background-color: #0a0a0a; /* Um cinza quase preto para separar da imagem */
+    color: #fff;
+    padding: 60px 8% 20px 8%;
+    border-top: 1px solid #222;
+}
+
+.rdp-descr {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.rdp-sbr {
+    flex: 1;
+    min-width: 250px;
+}
+
+.rdp-sbr p {
+    margin-top: 15px;
+    color: #888;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.rdp-links, .rdp-ctt {
+    flex: 1;
+    min-width: 200px;
+}
+
+footer h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.rdp-links ul {
+    list-style: none;
+}
+
+.rdp-links ul li {
+    margin-bottom: 12px;
+}
+
+.rdp-links ul li a {
+    text-decoration: none;
+    color: #888;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.rdp-links ul li a:hover {
+    color: #fff;
+    padding-left: 5px; /* Efeito sutil ao passar o mouse */
+}
+
+.rdp-ctt p {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Linha de copyright */
+.copyright {
+    text-align: center;
+    border-top: 1px solid #222;
+    padding-top: 20px;
+}
+
+.copyright p {
+    color: #555;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* --- RESPONSIVIDADE --- */
+
+/* Ajustes para Tablets (até 992px) */
+@media (max-width: 992px) {
+    header {
+        padding: 20px 5%;
+    }
+
+    .centro h1 {
+        font-size: 42px;
+    }
+
+    .sobre-hero h1 {
+        font-size: 36px;
+    }
+}
+
+/* Ajustes para Celulares Grandes e Tablets (até 768px) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Logo em cima, menu embaixo */
+        gap: 10px;
+        position: relative; /* Libera o espaço no topo em telas pequenas */
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    header ul li {
+        margin: 0 10px;
+    }
+
+    .inic-sect {
+        height: auto;
+        padding: 100px 20px;
+    }
+
+    .centro h1 {
+        font-size: 32px;
+    }
+
+    .btn-centro {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .missao-container {
+        padding: 40px 5%;
+        text-align: center;
+    }
+
+    .missao-img {
+        order: -1; /* Imagem aparece antes do texto no celular */
+    }
+
+    .rdp-descr {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .rdp-links ul li a:hover {
+        padding-left: 0; /* Remove o deslocamento lateral no mobile */
+    }
+}
+
+/* Ajustes para Celulares Pequenos (até 480px) */
+@media (max-width: 480px) {
+    header ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    header ul li {
+        margin: 0 5px;
+    }
+
+    .centro h1 {
+        font-size: 28px;
+    }
+
+    .pilar-card {
+        padding: 25px;
+    }
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estoque - Mc' Motors</title>
+    <link rel="stylesheet" href="Estilos/vendas.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">MC' MOTORS</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="vendas.html">Vendas</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="vendas-container">
+    <aside class="sidebar-filtros">
+        <h3>Filtrar por</h3>
+        <div class="grupo-filtro">
+            <label>Marca</label>
+            <select>
+                <option>Todas</option>
+                <option>Porsche</option>
+                <option>Lamborghini</option>
+                <option>BMW</option>
+            </select>
+        </div>
+        <div class="grupo-filtro">
+            <label>Modelo</label>
+            <input type="text" placeholder="Ex: 911 Carrera S">
+        </div>
+        <div class="grupo-filtro">
+            <label>Ano</label>
+            <div class="range-inputs">
+                <select>
+                    <option>Todos</option>
+                    <option>2025</option>
+                    <option>2024</option>
+                    <option>2023</option>
+                    <option>2022</option>
+                    <option>2021</option>
+                </select>
+            </div>
+        </div>
+        <div class="grupo-filtro">
+            <label>Preço</label>
+            <input type="number" placeholder="min" min="1.000">
+            <input type="number" placeholder="max" min="100.000.000">
+        </div>
+
+        <div class="grupo-filtro">
+            <label>Câmbio</label>
+            <div class="check-group">
+                <input type="checkbox" id="manual"> <label for="manual">Manual</label>
+            </div>
+            <div class="check-group">
+                <input type="checkbox" id="auto"> <label for="auto">Automático</label>
+            </div>
+        </div>
+    </aside>
+
+    <section class="vendas-grid">
+        <div class="car-card">
+            <div class="car-img">
+                <img src="Estilos/Imagens/carro1.jpg" alt="Porsche 911">
+                <span class="badge-inspected">Mc' Inspected</span>
+            </div>
+            <div class="car-info">
+                <h3>Porsche 911</h3>
+                <p class="car-versao">Carrera S | 3.0L Twin-Turbo PDK</p>
+                <div class="car-detalhes">
+                    <span>📅 2023</span>
+                    <span>🛣️ 4.500 KM</span>
+                    <span>⚙️ Automático</span>
+                </div>
+                <div class="car-footer">
+                    <span class="car-preco">R$ 890.000</span>
+                    <a href="#" class="btn-detalhes-venda">Ver Detalhes</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-about">
+            <h2 class="logo">MC' MOTORS</h2>
+            <p>Especialistas em performance automotiva e formação profissional de pilotos e mecânicos.</p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Navegação</h3>
+            <ul>
+                <li><a href="#">Estoque de Carros</a></li>
+                <li><a href="#">Próximos Cursos</a></li>
+                <li><a href="#">Sobre a Mc' Motors</a></li>
+                <li><a href="#">Política de Privacidade</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-contact">
+            <h3>Contato</h3>
+            <p>📍 Av. Velocidade, 1000 - Interlagos</p>
+            <p>📞 (11) 9999-9999</p>
+            <p>✉️ contato@mcmotors.com.br</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Mc' Motors. Todos os direitos reservados.</p>
+    </div>
+    </footer>
+    </body>
+</html>

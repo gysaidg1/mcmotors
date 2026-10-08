@@ -1,0 +1,416 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #8f8888;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 8%;
+    position: relative;
+    width: 100%;
+    z-index: 100;
+    background-color: #000;
+  
+}
+
+.logo {
+    font-size: 28px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.navbar ul li {
+    margin-left: 35px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgba(255,255,255,0.8);
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #fff;
+}
+
+/*section
+
+.vendas-page {
+    padding: 40px 8%;
+    background-color: #F2F0EF;
+    min-height: 100vh;
+}
+
+.vendas-header h1 {
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.vendas-header p {
+    color: #5e5d5d;
+}
+
+.vendas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+
+
+
+ Estilização dos Filtros 
+.filtros {
+    display: flex;
+    gap: 10px;
+    margin: 30px 0 50px 0;
+}
+
+.filtros input, .filtros select {
+    background: #111;
+    border: 1px solid #333;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.filtros input { flex: 3; }
+.filtros select { flex: 1; }
+
+ Melhorando os Cards de Carros 
+.carro-card {
+    background: #0a0a0a;
+    border: 1px solid #1a1a1a;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.carro-card:hover {
+    border-color: #fff;
+    transform: translateY(-5px);
+}
+
+.carro-img {
+    aspect-ratio: 16 / 5;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #1a1a1a;  Cor de fundo caso a imagem falhe 
+}
+
+.carro-info {
+    padding: 25px;
+}
+
+.carro-info h3 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 8px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.carro-info p {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.preco {
+    display: block;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+ Botão de Interesse 
+.btn-detalhes {
+    justify-content: center;
+    margin: 0 auto;
+    width: 50%;
+    padding: 12px;
+    display: block;
+    text-align: center;
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.btn-detalhes:hover {
+    transform: scale(1.02);
+    background: #ccc;
+}*/
+
+/* Estilos do Rodapé */
+.footer {
+    background-color: #0a0a0a; /* Um cinza quase preto para separar da imagem */
+    color: #fff;
+    padding: 60px 8% 20px 8%;
+    border-top: 1px solid #222;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-about {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-about p {
+    margin-top: 15px;
+    color: #888;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.footer-links, .footer-contact {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 12px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #888;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #fff;
+    padding-left: 5px; /* Efeito sutil ao passar o mouse */
+}
+
+.footer-contact p {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Linha final de copyright */
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #222;
+    padding-top: 20px;
+}
+
+.footer-bottom p {
+    color: #555;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+
+
+/* Layout Principal de Vendas */
+.vendas-container {
+    display: flex;
+    padding: 120px 5% 50px 5%;
+    gap: 30px;
+    background-color: #000;
+}
+
+/* Sidebar de Filtros */
+.sidebar-filtros {
+    flex: 0 0 280px; /* Largura fixa para a barra lateral */
+    background: #0a0a0a;
+    padding: 25px;
+    border: 1px solid #1a1a1a;
+    border-radius: 8px;
+    height: fit-content;
+    position: sticky;
+    top: 100px;
+}
+
+.sidebar-filtros h3 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+.grupo-filtro {
+    margin-bottom: 20px;
+}
+
+.grupo-filtro label {
+    display: block;
+    color: #888;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.grupo-filtro select, 
+.grupo-filtro input[type="text"], 
+.grupo-filtro input[type="number"] {
+    width: 100%;
+    background: #111;
+    border: 1px solid #222;
+    padding: 10px;
+    color: #fff;
+    outline: none;
+}
+
+/* Grid de Cards */
+.vendas-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 25px;
+}
+
+/* Estilo do Card Individual */
+.car-card {
+    background: #0a0a0a;
+    border: 1px solid #1a1a1a;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.car-card:hover {
+    border-color: #fff;
+    transform: translateY(-5px);
+}
+
+.car-img {
+    position: relative;
+    height: 200px;
+}
+
+.car-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.badge-inspected {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px 12px;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid #c40000; /* Um detalhe em vermelho para destacar */
+}
+
+.car-info {
+    padding: 20px;
+}
+
+.car-info h3 {
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.car-versao {
+    color: #666;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.car-detalhes {
+    display: flex;
+    justify-content: space-between;
+    color: #888;
+    font-size: 12px;
+    border-top: 1px solid #1a1a1a;
+    padding-top: 15px;
+    margin-bottom: 20px;
+}
+
+.car-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.car-preco {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.btn-detalhes-venda {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 8px 15px;
+    font-size: 12px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.btn-detalhes-venda:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* Responsividade do Grid */
+@media (max-width: 992px) {
+    .vendas-container {
+        flex-direction: column;
+    }
+    .sidebar-filtros {
+        flex: none;
+        width: 100%;
+        position: relative;
+        top: 0;
+    }
+}

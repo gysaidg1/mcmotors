@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #000;
+}
+
+/* Navbar mais elegante */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 8%;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 28px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.navbar ul li {
+    margin-left: 35px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgba(255,255,255,0.8);
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #fff;
+}
+
+
+/* --- PÁGINA SOBRE --- */
+.sobre-page {
+    background-color: #000;
+    min-height: 100vh;
+    padding-top: 80px; /* Para não ficar embaixo da navbar */
+}
+
+.sobre-hero {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('Imagens/ag1.jpg');
+    background-size: cover;
+    background-position: center;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+.sobre-hero h1 {
+    font-size: 48px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.sobre-hero p {
+    color: #888;
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+.missao-container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 80px 8%;
+    flex-wrap: wrap;
+}
+
+.missao-texto a {
+    color: #fff; /* Deixa o link branco */
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px solid #fff; /* Cria uma linha elegante embaixo */
+    transition: 0.3s;
+}
+
+.missao-texto a:hover {
+    color: #888;
+    border-bottom-color: #888;
+}
+
+.missao-texto {
+    flex: 1;
+    min-width: 300px;
+}
+
+.missao-texto h2 {
+    color: #fff;
+    font-size: 32px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.missao-texto p {
+    color: #888;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.missao-img {
+    flex: 1;
+    min-width: 300px;
+}
+
+.missao-img img {
+    width: 100%;
+    border-radius: 7px;
+    border: 1px solid #222;
+}
+
+/* Pilares M' Motors */
+.pilares {
+    background-color: rgb(34, 35, 37);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 60px 8% 100px 8%;
+}
+
+.pilar-card {
+    background: #000000;
+    padding: 40px;
+    border: 1px solid #1a1a1a;
+    transition: 0.3s;
+}
+
+.pilar-card:hover {
+    border-color: #fff;
+}
+
+.pilar-card span {
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+    display: block;
+    margin-bottom: 15px;
+    opacity: 0.5;
+}
+
+.pilar-card h3 {
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.pilar-card p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}

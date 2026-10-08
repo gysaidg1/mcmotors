@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #000000;
+}
+
+/*Navbar*/
+.navbar {
+    background-color: black;
+    backdrop-filter: blur(7px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 8%;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 28px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.navbar ul li {
+    margin-left: 35px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgba(255,255,255,0.8);
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #fff;
+}
+
+/*Section*/
+.sobre-hero-content {
+    margin: 10px;
+    margin-left: 30px;
+    padding: auto;
+}
+
+.sobre-hero-content p {
+    color: #cccccc;
+}
+
+.cursos-page {
+    padding-top: 120px;
+    background-color: #272727;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('Imagens/bg.jpg');
+    color: #fff;
+    padding-bottom: 80px;
+}
+
+.carro-info h3, .carro-content h3 {
+    color: #ffffff !important;
+    margin: 10px 0;
+}
+
+.curso-desc {
+    color: #bbbbbb; 
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.carro-content a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.vendas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 400px));
+    justify-content: center;
+    gap: 30px;
+    padding: 60px 8%;
+}
+
+.carro-card {
+    position: relative;
+    background: #0a0a0a;
+    border: 1px solid #222;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.carro-card:hover {
+    border-color: #fff;
+}
+
+.carro-img {
+    width: 100%;
+    height: 100px;
+    display: block;
+    background-color: #222;
+}
+
+.status-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 10;
+    background: #000000;
+    padding: 5px 15px;
+    font-weight: 700;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.btn-detalhes {
+    background: #ffffff !important;
+    color: #000 !important;
+    padding: 12px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    border-radius: 4px;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn-detalhes:hover {
+    background: #cccccc !important;
+}
+
+.preco {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.carro-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #222;
+}
+
+
+
+
+
+
+
+/* Estilos do Rodapé */
+.footer {
+    background-color: #0a0a0a; /* Um cinza quase preto para separar da imagem */
+    color: #fff;
+    padding: 110px 8% 20px 8%;
+    border-top: 1px solid #222;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-about {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-about p {
+    margin-top: 15px;
+    color: #888;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.footer-links, .footer-contact {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 12px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #888;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #fff;
+    padding-left: 5px; /* Efeito sutil ao passar o mouse */
+}
+
+.footer-contact p {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Linha final de copyright */
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #222;
+    padding-top: 20px;
+}
+
+.footer-bottom p {
+    color: #555;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
